@@ -1,0 +1,11 @@
+inherit ant
+
+DESCRIPTION="Java regular expression library"
+HOMEPAGE="http://jakarta.apache.org/regexp/"
+SRC_URI="mirror://apache/${ORIG_PN//-//}/source/${ORIG_PN}-${PV}.tar.gz"
+
+DISTCLEANFILES="docs/api/*.* docs/api/*/*/*/*.* docs/api/*/*/*/*/*.*"
+
+ANT_BUILD_TARGETS="jar javadocs"
+ANT_INSTALL_JARS="build/*.jar"
+ANT_INSTALL_JAVADOC="docs/api"
